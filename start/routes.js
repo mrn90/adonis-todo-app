@@ -16,8 +16,6 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-//Route.on('/').render('index')
-//Route.on('/register').render('register')
 
 Route.group(() => {
     Route.get('/register', 'RegisterController.create').as('register.create')
